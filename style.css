@@ -150,21 +150,40 @@ nav a {
   color: #fff;
 }
 .container-services {
-  background-color: black;
-  padding: 50px;
-  
-}
-.heading {
-  color: white;
-  text-align: center;
-}
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Distribute space between boxes */
+    flex-wrap: wrap; /* Allow boxes to wrap to the next line on smaller screens */
+    background-color: black;
+    padding: 20px;
+  }
 
- .box-1 {
-  width: 300px; /* Adjust the width as needed */
-  padding: 20px;
-  /* border: 1px solid #ccc; */
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  display: flex;
-}
+  .heading {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%; /* Ensure the heading takes the full width of the container */
+    color: white;
+    
+  }
+
+  .box-1 {
+    flex: 0 0 calc(33.333% - 20px); /* Each box takes up 33.333% of the container width with some margin */
+    /* border: 1px solid #ddd; */
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Add transition effect */
+    color: black;
+    background-color: #fff;
+  }
+
+  .box-1:hover {
+    transform: scale(1.05); /* Scale up the box on hover */
+  }
+  .box-1 img {
+    max-width: 7%;
+    height: auto;
+    margin-bottom: 10px;
+   border: 1px solid black;
+   padding: 10px;
+   border-radius: 3px;
+  }
