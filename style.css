@@ -149,6 +149,18 @@ nav a {
   background-color: #159881;
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Change flex direction to column for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .content,
+  .content-image {
+    flex: 1; /* Maintain flexibility for content and content-image in smaller screens */
+  }
+}
+
 .container-services {
     display: flex; /* Use flexbox */
     justify-content: space-between; /* Distribute space between boxes */
@@ -186,4 +198,27 @@ nav a {
    border: 1px solid black;
    padding: 10px;
    border-radius: 3px;
+  }
+  @media (max-width: 768px) {
+    .container-services {
+      flex-direction: column; /* Change flex direction to stack boxes vertically */
+      align-items: center; /* Center align boxes when stacked */
+      width: 95vw;
+      margin: 0 auto;
+      
+    }
+
+    .box-1 {
+      flex: 0 0 calc(100% - 20px); /* Each box takes full width when stacked */
+      border-radius: 10px;
+      border: none;
+    }
+    .box-1 img {
+       max-width: 15%;
+    height: auto;
+    margin-bottom: 10px;
+   /* border: 1px solid black; */
+   /* padding: 10px; */
+   border-radius: 3px;
+    }
   }
