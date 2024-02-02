@@ -160,13 +160,72 @@ nav a {
     flex: 1; /* Maintain flexibility for content and content-image in smaller screens */
   }
 }
+/* Add these styles to your style.css file */
 
+.container-1 {
+  /* background-color: #f0f0f0;  */
+  padding: 20px;
+  margin-top: 30px; /* Adjust margin as needed */
+   width: 95vw;
+  margin: 0 auto;
+}
+
+.container-1 h3 {
+  color: #333; /* Set your desired text color */
+  font-weight: bold;
+}
+
+.container-1 p {
+  color: #666; /* Set your desired text color */
+}
+
+.container-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top:5rem;
+  margin-bottom: 5rem;
+  width: 95vw;
+  margin: 0 auto;
+}
+
+.container-2 div {
+  text-align: center;
+}
+
+.container-2 img {
+  max-width: 10%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.container-2 h3 {
+  color: #333; /* Set your desired text color */
+  font-weight: bold;
+}
+
+.container-2 p {
+  color: #666; /* Set your desired text color */
+}
+  @media (max-width: 768px) {
+    .container-2 {
+      flex-direction: column;
+      width: 95vw;
+      margin: 0 auto;
+    }
+    .container-2 img {
+  max-width: 10%;
+  height: auto;
+}
+
+  }
 .container-services {
     display: flex; /* Use flexbox */
     justify-content: space-between; /* Distribute space between boxes */
     flex-wrap: wrap; /* Allow boxes to wrap to the next line on smaller screens */
     background-color: black;
     padding: 20px;
+    margin-top: 5rem;
   }
 
   .heading {
@@ -197,7 +256,7 @@ nav a {
     margin-bottom: 10px;
    border: 1px solid black;
    padding: 10px;
-   border-radius: 3px;
+   border-radius: 30px !important;
   }
   @media (max-width: 768px) {
     .container-services {
@@ -213,12 +272,113 @@ nav a {
       border-radius: 10px;
       border: none;
     }
+    .box-1 h4 {
+      font-weight: bold;
+    }
     .box-1 img {
        max-width: 15%;
     height: auto;
     margin-bottom: 10px;
    /* border: 1px solid black; */
    /* padding: 10px; */
-   border-radius: 3px;
+   border-radius: 30px;
     }
   }
+
+  /* Contact-form */
+/* Style for contact-form */
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 95vw;
+  margin: 0 auto;
+  /* margin-top: 3rem; */
+  color: #f2f2f2;
+}
+.contact-form h1 {
+font-weight: bold;
+}
+.background-color {
+  background-color:#159881 ;
+  padding: 3rem;
+}
+/* Style for get-in touch */
+.get-intouch {
+  flex: 1;
+  margin-right: 20px; /* Adjust the margin as needed */
+}
+
+/* Style for contact-content */
+.contact-content {
+  flex: 1;
+}
+
+/* Additional styling for better spacing if needed */
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: none;
+}
+.contact-content form {
+  border: 1px solid #fff; /* Set the border style and color as per your design */
+  padding: 20px; /* Add padding for better aesthetics */
+  border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+}
+.contact-form button {
+  background-color: black;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+/* Add more styling as needed */
+/* Style for get-intouch images */
+.get-intouch img {
+  max-width: 5%;
+  height: auto;
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+/* Style for contact-content images */
+.contact-content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px; /* Adjust the margin as needed */
+  
+}
+/* Style for contact-phone, contact-email, contact-twitter, and contact-fb */
+.contact-phone,
+.contact-email,
+.contact-twitter,
+.contact-fb {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+/* Style for the images within contact-phone, contact-email, contact-twitter, and contact-fb */
+.contact-phone img,
+.contact-email img,
+.contact-twitter img,
+.contact-fb img {
+  max-width: 24px; /* Adjust the max-width as needed */
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+/* Additional styling for text within contact-phone, contact-email, contact-twitter, and contact-fb */
+.contact-phone p,
+.contact-email p,
+.contact-twitter p,
+.contact-fb p {
+  margin: 0;
+}
