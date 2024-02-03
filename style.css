@@ -16,7 +16,6 @@ body {
 }
 body {
   font-family: "Montserrat", sans-serif;
- 
 }
 .logo-bar {
   display: flex;
@@ -25,15 +24,14 @@ body {
   margin: 0 auto;
   justify-content: space-between;
   margin-top: 1rem;
-  
 }
 span {
   color: black;
   font-weight: bold;
 }
 .logo h1 {
-  font-weight:bold;
- letter-spacing: 0.3rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
 }
 /* header {
   background-color: #159881; 
@@ -74,34 +72,34 @@ nav a {
   background-color: #159881;
 }
 .nav-link a {
-  transition: all .4s ease;
+  transition: all 0.4s ease;
   background-color: black;
 }
 .home-content {
-    background-image: url(img/Background-Image.jpg);
+  background-image: url(img/Background-Image.jpg);
   background-position: center;
   background-size: cover;
   min-height: 60vh;
-  padding-top: 50px; 
+  padding-top: 50px;
 }
 .home-text {
-    width: 60vw;
-    margin: 0 auto;
-    margin-top: 15rem;
-    color: #fff;
+  width: 60vw;
+  margin: 0 auto;
+  margin-top: 15rem;
+  color: #fff;
 }
 .cta button {
-    padding: 15px;
-    border-radius: 30px;
-    border: 2px solid white;
-    background: transparent;
-    color: white;
-    font-family: "Montserrat", sans-serif;
- margin-top: 12px;
+  padding: 15px;
+  border-radius: 30px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 12px;
 }
 .container {
-  display: flex;  /* Add this line to enable flexbox */
-  justify-content: space-between;  
+  display: flex; /* Add this line to enable flexbox */
+  justify-content: space-between;
   width: 100% !important;
   max-width: none !important;
   margin: auto;
@@ -116,7 +114,7 @@ nav a {
 }
 
 .content {
-  flex: 1;  /* Add this line to make content take available space */
+  flex: 1; /* Add this line to make content take available space */
   text-align: center;
   padding: 20px;
   align-items: center;
@@ -132,7 +130,7 @@ nav a {
 }
 
 .content-image {
-  flex: 1;  /* Add this line to make content-image take available space */
+  flex: 1; /* Add this line to make content-image take available space */
   margin-top: 20px;
 }
 
@@ -166,7 +164,7 @@ nav a {
   /* background-color: #f0f0f0;  */
   padding: 20px;
   margin-top: 30px; /* Adjust margin as needed */
-   width: 95vw;
+  width: 95vw;
   margin: 0 auto;
 }
 
@@ -183,7 +181,7 @@ nav a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top:5rem;
+  margin-top: 5rem;
   margin-bottom: 5rem;
   width: 95vw;
   margin: 0 auto;
@@ -207,100 +205,97 @@ nav a {
 .container-2 p {
   color: #666; /* Set your desired text color */
 }
-  @media (max-width: 768px) {
-    .container-2 {
-      flex-direction: column;
-      width: 95vw;
-      margin: 0 auto;
-    }
-    .container-2 img {
-  max-width: 10%;
-  height: auto;
+@media (max-width: 768px) {
+  .container-2 {
+    flex-direction: column;
+    width: 95vw;
+    margin: 0 auto;
+  }
+  .container-2 img {
+    max-width: 10%;
+    height: auto;
+  }
+}
+.container-services {
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Distribute space between boxes */
+  flex-wrap: wrap; /* Allow boxes to wrap to the next line on smaller screens */
+  background-color: black;
+  padding: 20px;
+  margin-top: 5rem;
 }
 
-  }
-.container-services {
-    display: flex; /* Use flexbox */
-    justify-content: space-between; /* Distribute space between boxes */
-    flex-wrap: wrap; /* Allow boxes to wrap to the next line on smaller screens */
-    background-color: black;
-    padding: 20px;
-    margin-top: 5rem;
-  }
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%; /* Ensure the heading takes the full width of the container */
+  color: white;
+}
 
-  .heading {
-    text-align: center;
-    margin-bottom: 20px;
-    width: 100%; /* Ensure the heading takes the full width of the container */
-    color: white;
-    
+.box-1 {
+  flex: 0 0 calc(33.333% - 20px); /* Each box takes up 33.333% of the container width with some margin */
+  /* border: 1px solid #ddd; */
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out; /* Add transition effect */
+  color: black;
+  background-color: #fff;
+}
+
+.box-1:hover {
+  transform: scale(1.05); /* Scale up the box on hover */
+}
+.box-1 img {
+  max-width: 7%;
+  height: auto;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 30px !important;
+}
+@media (max-width: 768px) {
+  .container-services {
+    flex-direction: column; /* Change flex direction to stack boxes vertically */
+    align-items: center; /* Center align boxes when stacked */
+    /* width: 95vw;
+    margin: 0 auto; */
   }
 
   .box-1 {
-    flex: 0 0 calc(33.333% - 20px); /* Each box takes up 33.333% of the container width with some margin */
-    /* border: 1px solid #ddd; */
-    padding: 15px;
-    margin-bottom: 20px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out; /* Add transition effect */
-    color: black;
-    background-color: #fff;
+    flex: 0 0 calc(100% - 20px); /* Each box takes full width when stacked */
+    border-radius: 10px;
+    border: none;
   }
-
-  .box-1:hover {
-    transform: scale(1.05); /* Scale up the box on hover */
+  .box-1 h4 {
+    font-weight: bold;
   }
   .box-1 img {
-    max-width: 7%;
+    max-width: 15%;
     height: auto;
     margin-bottom: 10px;
-   border: 1px solid black;
-   padding: 10px;
-   border-radius: 30px !important;
+    /* border: 1px solid black; */
+    /* padding: 10px; */
+    border-radius: 30px;
   }
-  @media (max-width: 768px) {
-    .container-services {
-      flex-direction: column; /* Change flex direction to stack boxes vertically */
-      align-items: center; /* Center align boxes when stacked */
-      width: 95vw;
-      margin: 0 auto;
-      
-    }
+}
 
-    .box-1 {
-      flex: 0 0 calc(100% - 20px); /* Each box takes full width when stacked */
-      border-radius: 10px;
-      border: none;
-    }
-    .box-1 h4 {
-      font-weight: bold;
-    }
-    .box-1 img {
-       max-width: 15%;
-    height: auto;
-    margin-bottom: 10px;
-   /* border: 1px solid black; */
-   /* padding: 10px; */
-   border-radius: 30px;
-    }
-  }
-
-  /* Contact-form */
+/* Contact-form */
 /* Style for contact-form */
 .contact-form {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  width: 95vw;
+  width: 85vw;
   margin: 0 auto;
   /* margin-top: 3rem; */
   color: #f2f2f2;
 }
 .contact-form h1 {
-font-weight: bold;
+  font-weight: bold;
 }
 .background-color {
-  background-color:#159881 ;
+  background-color: #159881;
   padding: 3rem;
 }
 /* Style for get-in touch */
@@ -354,7 +349,6 @@ font-weight: bold;
   max-width: 100%;
   height: auto;
   margin-bottom: 10px; /* Adjust the margin as needed */
-  
 }
 /* Style for contact-phone, contact-email, contact-twitter, and contact-fb */
 .contact-phone,
@@ -381,4 +375,189 @@ font-weight: bold;
 .contact-twitter p,
 .contact-fb p {
   margin: 0;
+}
+/* Media query for screens with a maximum width of 768 pixels */
+@media screen and (max-width: 768px) {
+  /* Select the contact-form class */
+  .contact-form {
+    /* Adjust the styling for the contact-form on smaller screens */
+    flex-direction: column; /* Change the flex direction to stack items vertically */
+    align-items: center; /* Center align items */
+    width: 75vw; /* Set the width of the contact-form */
+    margin: 0 auto; /* Center the contact-form horizontally */
+    margin-top: 4rem; /* Adjust the top margin as needed */
+  }
+  
+  
+
+  /* Additional styling for better spacing if needed */
+  .contact-form label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: none;
+  }
+
+  .contact-content form {
+    border: 1px solid #fff; /* Set the border style and color as per your design */
+    padding: 20px; /* Add padding for better aesthetics */
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+  }
+
+  .contact-form button {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+
+  /* Style for get-in touch images */
+  .get-intouch img {
+    max-width: 5%;
+    height: auto;
+    margin-bottom: 10px; /* Adjust the margin as needed */
+  }
+
+  /* Style for contact-content images */
+  .contact-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Adjust the margin as needed */
+  }
+
+  /* Style for contact-phone, contact-email, contact-twitter, and contact-fb */
+  .contact-phone,
+  .contact-email,
+  .contact-twitter,
+  .contact-fb {
+    margin-bottom: 10px; /* Adjust the margin as needed */
+  }
+
+  /* Style for the images within contact-phone, contact-email, contact-twitter, and contact-fb */
+  .contact-phone img,
+  .contact-email img,
+  .contact-twitter img,
+  .contact-fb img {
+    max-width: 24px; /* Adjust the max-width as needed */
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+
+  /* Additional styling for text within contact-phone, contact-email, contact-twitter, and contact-fb */
+  .contact-phone p,
+  .contact-email p,
+  .contact-twitter p,
+  .contact-fb p {
+    margin: 0;
+  }
+}
+
+/* Footer */
+
+.footer-bg {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  width: 40vw;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px){
+  .footer-bg {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  width: 100vw;
+ 
+  margin: 0 auto;
+}
+}
+.footer-bg .about p {
+  margin: 0; /* Remove default margin for the paragraph */
+}
+
+.footer-bg .cta-abt button {
+  background-color: #fff;
+  color: white;
+  padding: 10px 15px;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 30px;
+  background: transparent;
+}
+@media screen and (max-width: 768px) {
+  .footer-bg .cta-abt button {
+  background-color: #fff;
+  color: white;
+  padding: 10px 15px;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 30px;
+  background: transparent;
+  margin-top: 2rem;
+}
+}
+.footer-bg-one {
+  background-color: black;
+}
+/* style.css */
+
+/* Style for the footer-content class */
+.ftr {
+  background-color: #282828;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+}
+
+.company, .contact, .address {
+  margin-bottom: 20px; /* Add margin between the sections */
+  text-align: center;
+  margin-top: 3rem;
+  color: #fff;
+}
+
+.company h1, .contact h1, .address h1 {
+  color: #fff;
+}
+
+
+.company ul {
+  list-style: none; /* Remove the default list styling */
+  padding: 0; /* Remove default padding */
+}
+
+.company li a {
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* Set the color for the links */
+  display: block; /* Make the links block-level for better spacing */
+  margin-bottom: 5px; /* Add margin between the links */
+}
+
+/* Additional styling for the contact information */
+.contact p {
+  margin: 5px 0; /* Add margin to the contact paragraphs */
+}
+footer {
+    background-color:#282828;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    /* position: fixed; */
+    /* bottom: 0; */
+    /* width: 100%; */
+    align-items: center;
 }
