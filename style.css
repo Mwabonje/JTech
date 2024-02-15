@@ -24,7 +24,6 @@ body {
   margin: 0 auto;
   justify-content: space-between;
   margin-top: 1rem;
-  
 }
 span {
   color: black;
@@ -71,22 +70,24 @@ nav a {
 } */
 .navbar {
   background-color: #159881;
-  
 }
 .nav-link a {
   transition: all 0.4s ease;
   background-color: black;
-  
 }
 .home-content {
   /* background-image: url(img/Background4-Image.jpg); */
- background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0.2)), url(img/Background3-Image.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7) 10%,
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(img/Background3-Image.jpg);
   background-position: center;
   background-position: center;
   background-size: cover;
   min-height: 65vh;
   padding-top: 50px;
-  
 }
 .home-text {
   width: 60vw;
@@ -106,33 +107,30 @@ nav a {
   margin-top: 12px;
 }
 .cta button:hover {
-  transition: all .4s ease-out;
+  transition: all 0.4s ease-out;
   background: transparent;
 }
 @media screen and (max-width: 768px) {
   .home-content {
     background-image: url(img/Background3-Image.jpg);
- /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0.2)), url(img/Background3-Image.jpg); */
-  background-position: center;
-  background-size: cover;
-  min-height: 60vh;
-  padding-top: 50px;
- 
+    /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0.2)), url(img/Background3-Image.jpg); */
+    background-position: center;
+    background-size: cover;
+    min-height: 60vh;
+    padding-top: 50px;
   }
 
   .home-text {
     width: 80vw; /* Adjust width for smaller screens */
     margin: 0 auto;
-    margin-top: 10rem; /* Adjust margin as needed */
-    
+    margin-top: 11rem; /* Adjust margin as needed */
   }
-.home-text h1 {
-  font-weight: bolder;
-  font-size: 25px;
-}
+  .home-text h1 {
+    font-weight: bolder;
+    font-size: 25px;
+  }
   .cta button {
     margin-top: 8px; /* Adjust margin as needed */
-    
   }
 }
 
@@ -319,11 +317,89 @@ nav a {
     border-radius: 30px;
   }
 }
+/* Testimonials Section */
+/* Testimonials */
+.Testimonials-heading {
+  text-align: center;
+  margin-top: 5rem;
+ 
+}
+.Testimonials-heading h1 {
+  font-size: 20px;
+   color: #159881;
+   font-weight: bold;
+}
+.Testimonials-heading p {
+  font-style: italic;
+}
+.Testimonials {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px; /* Adjust as needed */
+  width: 95vw;
+  margin: 0 auto;
+}
+
+.feedback {
+  background-color: #159881; /* Light background color */
+  padding: 20px;
+  border-radius: 10px;
+  width: calc(33.33% - 20px); /* Adjust width based on your design */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  position: relative;
+   transition: transform 0.3s ease-in-out;
+}
+.feedback:hover {
+   transform: scale(1.05);
+}
+.feedback h2 {
+  font-size: 60px;
+  /* margin-bottom: 5px; */
+  color: #fff;
+}
+
+.feedback h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.feedback p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+.title-name {
+  color: #fff;
+}
+.feedback img {
+  width: 15%;
+  /* margin-top: 0rem; */
+  border-radius: 50%;
+  position: absolute;
+  /* margin-left: 14.5rem; */
+  border: 2px solid white;
+  transition: transform 0.3s ease-in-out;
+}
+.feedback img:hover {
+  transform: scale(1.05);
+}
+/* .bg-color {
+  background-color: black;
+  margin-top: 2rem;
+  position: relative;
+  padding:3rem ;
+  width: 50%;
+} */
+
+
+/* End */
 /* Our-Team Section */
- /* Add this CSS to style the our-team section */
+/* Add this CSS to style the our-team section */
 .our-team {
   background-color: #f4f4f4;
   padding: 50px 0; /* Adjust padding as needed */
+  margin-top: 10rem;
 }
 
 .team-heading {
@@ -357,7 +433,7 @@ nav a {
   text-align: center;
   background-color: white;
   padding: 2rem;
-   transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 .team-image:hover {
   transform: scale(1.05);
@@ -382,6 +458,30 @@ nav a {
   font-size: 1rem; /* Adjust font size as needed */
   color: #666; /* Adjust color as needed */
 }
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens here */
+  .team-images {
+    flex-direction: column; /* Stack team images vertically */
+    align-items: center; /* Center align team images */
+    border-radius: 20px;
+  }
+
+  .team-image {
+    margin-bottom: 20px; /* Add margin between team images */
+    border-radius: 20px;
+  }
+
+  .team-image img {
+    width: 150px; /* Adjust image width for smaller screens */
+    height: 150px; /* Adjust image height for smaller screens */
+  }
+
+  .team-heading p {
+    width: 80vw; /* Adjust paragraph width for smaller screens */
+    margin: 0 auto; /* Center align paragraph */
+    text-align: center; /* Center align text */
+  }
+}
 
 /* End */
 /* Contact-form */
@@ -401,6 +501,7 @@ nav a {
 .background-color {
   background-color: #159881;
   padding: 3rem;
+  /* position: relative; */
 }
 /* Style for get-in touch */
 .get-intouch {
@@ -413,6 +514,10 @@ nav a {
 /* Style for contact-content */
 .contact-content {
   flex: 1;
+  /* background-color: #282828; */
+  /* padding: 2rem;
+  position: absolute;
+  */
 }
 
 /* Additional styling for better spacing if needed */
@@ -428,7 +533,8 @@ form {
   width: 100%;
   padding: 8px;
   margin-bottom: 16px;
-  border: none;
+  /* border: 2px solid orangered; */
+  /* border-radius: 20px; */
 }
 .contact-content form {
   border: 1px solid #fff; /* Set the border style and color as per your design */
@@ -500,7 +606,7 @@ form {
     align-items: center; /* Center align items */
     width: 75vw; /* Set the width of the contact-form */
     margin: 0 auto; /* Center the contact-form horizontally */
-    margin-top: 4rem; /* Adjust the top margin as needed */
+    /* margin-top: rem; */
   }
 
   /* Additional styling for better spacing if needed */
@@ -559,7 +665,7 @@ form {
   .contact-email img,
   .contact-twitter img,
   .contact-fb img {
-    max-width: 24px; /* Adjust the max-width as needed */
+    max-width: 20px; /* Adjust the max-width as needed */
     margin-right: 10px; /* Adjust the margin as needed */
   }
 
@@ -569,6 +675,7 @@ form {
   .contact-twitter p,
   .contact-fb p {
     margin: 0;
+    font-size: 10px;
   }
 }
 
