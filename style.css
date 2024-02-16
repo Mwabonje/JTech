@@ -71,10 +71,20 @@ nav a {
 .navbar {
   background-color: #159881;
 }
-.nav-link a {
-  transition: all 0.4s ease;
-  background-color: black;
+/* Add this CSS to your style.css file */
+/* Add this CSS to your style.css file */
+.navbar-nav .nav-item .nav-link:hover {
+  color: black!important; /* Change color on hover */
 }
+
+/* Optionally, you can add transition effects for smooth hover */
+.navbar-nav .nav-item .nav-link {
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+
+
+
 .home-content {
   /* background-image: url(img/Background4-Image.jpg); */
   background-image: linear-gradient(
@@ -362,12 +372,14 @@ nav a {
   font-size: 18px;
   margin-bottom: 10px;
   font-weight: bold;
+  color: white;
 }
 
 .feedback p {
   font-size: 16px;
   margin-bottom: 20px;
   font-style: italic;
+  color: white;
 }
 .title-name {
   color: #fff;
@@ -384,6 +396,18 @@ nav a {
 .feedback img:hover {
   transform: scale(1.05);
 }
+@media screen and (max-width: 768px) {
+  .Testimonials {
+    flex-direction: column; /* Change flex direction to stack testimonials vertically */
+    align-items: center; /* Center align testimonials */
+  }
+
+  .feedback {
+    width: 95%; /* Adjust width of each testimonial */
+    margin-bottom: 50px; /* Add margin between testimonials */
+  }
+}
+
 /* .bg-color {
   background-color: black;
   margin-top: 2rem;
@@ -459,6 +483,9 @@ nav a {
   color: #666; /* Adjust color as needed */
 }
 @media screen and (max-width: 768px) {
+  .our-team {
+    margin-top:2rem;
+  }
   /* Adjust styles for smaller screens here */
   .team-images {
     flex-direction: column; /* Stack team images vertically */
@@ -759,10 +786,14 @@ form {
   margin-top: 3rem;
   color: #fff;
 }
-.line {
-  padding: 0.05px;
-  background-color: #fff;
-  height: 13rem;
+.social-icons {
+  margin-top: 10px;
+}
+.social-icons a {
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
 }
 .company h1,
 .contact h1,
