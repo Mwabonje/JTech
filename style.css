@@ -26,8 +26,11 @@ body {
   margin-top: 1rem;
 }
 span {
-  color: black;
+  color: #032742;
   font-weight: bold;
+}
+.jtech {
+ color: #159881;
 }
 .logo h1 {
   font-weight: bold;
@@ -74,16 +77,13 @@ nav a {
 /* Add this CSS to your style.css file */
 /* Add this CSS to your style.css file */
 .navbar-nav .nav-item .nav-link:hover {
-  color: black!important; /* Change color on hover */
+  color: black !important; /* Change color on hover */
 }
 
 /* Optionally, you can add transition effects for smooth hover */
 .navbar-nav .nav-item .nav-link {
   transition: color 0.3s ease; /* Smooth transition */
 }
-
-
-
 
 .home-content {
   /* background-image: url(img/Background4-Image.jpg); */
@@ -92,17 +92,17 @@ nav a {
       rgba(0, 0, 0, 0.7) 10%,
       rgba(0, 0, 0, 0.2)
     ),
-    url(img/Background3-Image.jpg);
+    url(img/background6-1-image.jpg);
   background-position: center;
   background-position: center;
   background-size: cover;
-  min-height: 65vh;
+  min-height: 80vh;
   padding-top: 50px;
 }
 .home-text {
-  width: 60vw;
+  width: 85vw;
   margin: 0 auto;
-  margin-top: 15rem;
+  margin-top: 18rem;
   color: #fff;
   /* color: #159881; */
   /* margin-left: 50%; */
@@ -111,29 +111,29 @@ nav a {
   padding: 15px;
   border-radius: 30px;
   border: 2px solid white;
-  background: #159881;
+  background: transparent;
   color: white;
   font-family: "Montserrat", sans-serif;
   margin-top: 12px;
 }
 .cta button:hover {
   transition: all 0.4s ease-out;
-  background: transparent;
+  background: #159881;
 }
 @media screen and (max-width: 768px) {
   .home-content {
-    background-image: url(img/Background3-Image.jpg);
-    /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0.2)), url(img/Background3-Image.jpg); */
+    /* background-image: url(img/Background6-Image.jpg); */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0.2)), url(img/Background6-Image.jpg);
     background-position: center;
     background-size: cover;
-    min-height: 60vh;
+    min-height: 80vh;
     padding-top: 50px;
   }
 
   .home-text {
     width: 80vw; /* Adjust width for smaller screens */
     margin: 0 auto;
-    margin-top: 11rem; /* Adjust margin as needed */
+    margin-top: 11rem; 
   }
   .home-text h1 {
     font-weight: bolder;
@@ -332,12 +332,11 @@ nav a {
 .Testimonials-heading {
   text-align: center;
   margin-top: 5rem;
- 
 }
 .Testimonials-heading h1 {
   font-size: 20px;
-   color: #159881;
-   font-weight: bold;
+  color: #159881;
+  font-weight: bold;
 }
 .Testimonials-heading p {
   font-style: italic;
@@ -357,10 +356,10 @@ nav a {
   width: calc(33.33% - 20px); /* Adjust width based on your design */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
   position: relative;
-   transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 .feedback:hover {
-   transform: scale(1.05);
+  transform: scale(1.05);
 }
 .feedback h2 {
   font-size: 60px;
@@ -415,7 +414,6 @@ nav a {
   padding:3rem ;
   width: 50%;
 } */
-
 
 /* End */
 /* Our-Team Section */
@@ -484,7 +482,7 @@ nav a {
 }
 @media screen and (max-width: 768px) {
   .our-team {
-    margin-top:2rem;
+    margin-top: 2rem;
   }
   /* Adjust styles for smaller screens here */
   .team-images {
