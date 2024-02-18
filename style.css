@@ -73,6 +73,7 @@ nav a {
 } */
 .navbar {
   background-color: #159881;
+  
 }
 /* Add this CSS to your style.css file */
 /* Add this CSS to your style.css file */
@@ -107,6 +108,29 @@ nav a {
   /* color: #159881; */
   /* margin-left: 50%; */
 }
+/* Keyframes for text animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(80px); /* Increase the initial translateY value for a stronger effect */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to home-text class's h1 element */
+.home-text h1 {
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+
+/* Apply animation to home-text class's h1 element */
+.home-text h1 {
+  animation: fadeInUp 1.5s ease forwards;
+}
+
 .cta button {
   padding: 15px;
   border-radius: 30px;
