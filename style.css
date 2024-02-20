@@ -30,7 +30,7 @@ span {
   font-weight: bold;
 }
 .jtech {
- color: #159881;
+  color: #159881;
 }
 .logo h1 {
   font-weight: bold;
@@ -73,7 +73,6 @@ nav a {
 } */
 .navbar {
   background-color: #159881;
-  
 }
 /* Add this CSS to your style.css file */
 /* Add this CSS to your style.css file */
@@ -95,10 +94,10 @@ nav a {
     ),
     url(img/background6-1-image.jpg);
   background-position: center;
-  background-position: center;
   background-size: cover;
   min-height: 80vh;
   padding-top: 50px;
+  position: relative;
 }
 .home-text {
   width: 85vw;
@@ -112,7 +111,9 @@ nav a {
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(80px); /* Increase the initial translateY value for a stronger effect */
+    transform: translateY(
+      80px
+    ); /* Increase the initial translateY value for a stronger effect */
   }
   to {
     opacity: 1;
@@ -124,7 +125,6 @@ nav a {
 .home-text h1 {
   animation: fadeInUp 1.5s ease forwards;
 }
-
 
 /* Apply animation to home-text class's h1 element */
 .home-text h1 {
@@ -147,17 +147,23 @@ nav a {
 @media screen and (max-width: 768px) {
   .home-content {
     /* background-image: url(img/Background6-Image.jpg); */
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0.2)), url(img/Background6-Image.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7) 10%,
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(img/Background6-Image.jpg);
     background-position: center;
     background-size: cover;
     min-height: 80vh;
     padding-top: 50px;
+    position: relative;
   }
 
   .home-text {
     width: 80vw; /* Adjust width for smaller screens */
     margin: 0 auto;
-    margin-top: 11rem; 
+    margin-top: 11rem;
   }
   .home-text h1 {
     font-weight: bolder;
@@ -165,6 +171,81 @@ nav a {
   }
   .cta button {
     margin-top: 8px; /* Adjust margin as needed */
+  }
+}
+/* Style for the container */
+
+.cnslt {
+  position: absolute; /* Position the element absolutely within its relative parent */
+  background-color: #159881;
+  padding: 20px;
+  border-radius: 10px;
+  width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0; /* Position the element at the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  margin-bottom: -3rem; /* Adjust margin-bottom as needed */
+}
+.phone {
+  border: 0.8px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 2rem;
+}
+/* Style for the consultation number */
+.cnslt-num {
+  margin-bottom: 15px; /* Spacing below the consultation number */
+}
+
+.cnslt-num h4 {
+  color: #f2f2f2;
+  font-size: 20px; /* Larger font size for the heading */
+  margin-bottom: 5px; /* Spacing below the heading */
+}
+
+.cnslt-num p {
+  color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Style for the paragraph */
+.par {
+  margin-bottom: 15px; /* Spacing below the paragraph */
+}
+
+.par p {
+  color: #f2f2f2;
+  line-height: 1.6; /* Line height for better readability */
+}
+
+/* Style for the consultation button */
+.cnslt-btn button {
+  background-color: white; /* Blue button background color */
+  color: black; /* White button text color */
+  /* background: transparent; */
+  border: 2px solid white; /* Remove button border */
+  padding: 10px 20px; /* Padding inside the button */
+  border-radius: 30px; /* Rounded button corners */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+  font-weight: bold;
+}
+
+.cnslt-btn button:hover {
+  background-color: black; /* Darker blue color on hover */
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .cnslt {
+    display: none;
+  }
+
+  .phone {
+    display: none;
   }
 }
 
@@ -179,7 +260,7 @@ nav a {
   /* border: 1px solid #ccc; */
   /* border-radius: 8px; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 3rem;
+  margin-top: 6rem;
   margin-bottom: 3rem;
   align-items: center;
 }
@@ -223,6 +304,7 @@ nav a {
   .container {
     flex-direction: column; /* Change flex direction to column for smaller screens */
     padding: 10px; /* Adjust padding for smaller screens */
+    margin-top: -1rem;
   }
 
   .content,
@@ -351,6 +433,77 @@ nav a {
     border-radius: 30px;
   }
 }
+/* our process */
+.our-process {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+}
+
+.our-process h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 10px;
+  /* background-color: #032742; */
+}
+
+.our-process-text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.our-process-text p {
+  margin-top: -5rem;
+  width: 80vw;
+  margin: 0 auto;
+}
+.our-process-text h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.process {
+ color: #159881;
+}
+.circle {
+  display: flex;
+  justify-content: space-around;
+}
+
+.circle-1,
+.circle-2,
+.circle-3 {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #333; /* Add border */
+  border-radius: 50%; /* Add border radius to make circles */
+  width: 250px; /* Set width and height to make circles */
+  height: 250px; /* Set width and height to make circles */
+}
+.circle-2 {
+  margin-top: 10rem;
+}
+.circle h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  background-color: #159881;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+.circle h6 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.circle p {
+  font-size: 16px;
+  color: #666;
+  align-items: center;
+}
+
+/* end */
 /* Testimonials Section */
 /* Testimonials */
 .Testimonials-heading {
