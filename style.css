@@ -92,7 +92,7 @@ nav a {
       rgba(0, 0, 0, 0.7) 10%,
       rgba(0, 0, 0, 0.2)
     ),
-    url(img/background6-1-image.jpg);
+    url(img/background7-image.jpg);
   background-position: center;
   background-size: cover;
   min-height: 80vh;
@@ -146,7 +146,7 @@ nav a {
 }
 @media screen and (max-width: 768px) {
   .home-content {
-    /* background-image: url(img/Background6-Image.jpg); */
+    /* background-image: url(img/Background7-Image.jpg); */
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.7) 10%,
