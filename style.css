@@ -152,7 +152,7 @@ nav a {
         rgba(0, 0, 0, 0.7) 10%,
         rgba(0, 0, 0, 0.2)
       ),
-      url(img/background7-Image.jpg);
+      url(..img/background7-Image.jpg);
     background-position: center;
     background-size: cover;
     min-height: 80vh;
@@ -237,14 +237,13 @@ nav a {
     flex: 1; /* Maintain flexibility for content and content-image in smaller screens */
   }
   .btn button {
-  padding: 0.5rem;
-  margin-top: 1rem !important;
-  border-radius: 30px;
-  border: 2px solid black;
-  background-color: #159881;
-  color: #fff;
-  
-}
+    padding: 0.5rem;
+    margin-top: 1rem !important;
+    border-radius: 30px;
+    border: 2px solid black;
+    background-color: #159881;
+    color: #fff;
+  }
 }
 /* Add these styles to your style.css file */
 
@@ -457,7 +456,7 @@ nav a {
     flex-direction: column; /* Stack circles vertically for smaller screens */
     align-items: center; /* Center align circles */
   }
-  
+
   .circle-1,
   .circle-2,
   .circle-3 {
