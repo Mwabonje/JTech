@@ -95,7 +95,7 @@ nav a {
     url(img/background7-image.jpg);
   background-position: center;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 80vh;
   padding-top: 50px;
   position: relative;
 }
