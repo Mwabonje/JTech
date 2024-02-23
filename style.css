@@ -162,7 +162,7 @@ nav a {
   .home-text {
     width: 80vw; /* Adjust width for smaller screens */
     margin: 0 auto;
-    margin-top: 11rem;
+    margin-top: 11rem; /* Adjust margin-top specifically for iPhone SE */
   }
   .home-text h1 {
     font-weight: bolder;
