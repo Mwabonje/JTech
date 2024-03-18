@@ -1,14 +1,14 @@
 
   
       // function to display a greeting alert
-      function displayGreeting() {
-        alert(
-          "Hey there! Your experience matters to us. Explore our website and tell us how we can make it better for you."
-        );
-      }
+      // function displayGreeting() {
+      //   alert(
+      //     "Hey there! Your experience matters to us. Explore our website and tell us how we can make it better for you."
+      //   );
+      // }
 
       // When the window loads
-      window.onload=displayGreeting();
+      // window.onload=displayGreeting();
    
    //smooth scrolling behavior when anchor links are clicked
     document.addEventListener("DOMContentLoaded", function() {

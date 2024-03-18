@@ -85,6 +85,7 @@ nav a {
   transition: color 0.3s ease; /* Smooth transition */
 }
 
+
 .home-content {
   /* background-image: url(img/Background7-Image.jpg); */
   background-image: linear-gradient(
@@ -573,8 +574,80 @@ nav a {
 } */
 
 /* End */
+
+
+  /*---------------------------------------
+      PRICING             
+  -----------------------------------------*/
+#pricing{
+  width: 95vw;
+  margin: 0 auto;
+}
+  #about .section-title,
+  #pricing .section-title {
+    text-align: center;
+ width: 95vw;
+  margin: 0 auto;
+  }
+
+  #pricing .col-md-4 {
+    margin: 0;
+    padding: 0;
+  }
+
+  #pricing .col-md-4:last-child .pricing-thumb {
+    border-right: 0;
+  }
+
+  .pricing-thumb {
+    background: #ffffff;
+    border-right: 2px solid #f0f0f0;
+    padding: 20px 40px;
+  }
+
+  .pricing-title {
+    padding-bottom: 5px;
+  }
+
+  .pricing-info {
+    border-top: 2px solid #f0f0f0;
+    border-bottom: 2px solid #f0f0f0;
+  }
+
+  .pricing-info,
+  .pricing-bottom {
+    padding: 20px 0;
+  }
+
+  .pricing-info p {
+    font-size: 16px;
+  }
+
+  .pricing-bottom {
+    position: relative;
+  }
+
+  .pricing-bottom span {
+    font-size: 20px;
+  }
+
+  .pricing-btn {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    display: inline-block;
+   background-color: #159881;
+   padding: 10px;
+   color: white;
+   border-radius: 30px;
+  }
+  .section-btn, .pricing-btn a {
+    text-decoration: none;
+  }
+/* End */
+
+
 /* Our-Team Section */
-/* Add this CSS to style the our-team section */
 .our-team {
   background-color: #f4f4f4;
   padding: 50px 0; /* Adjust padding as needed */
@@ -664,9 +737,8 @@ nav a {
     text-align: center; /* Center align text */
   }
 }
-
 /* End */
-/* Contact-form */
+
 /* Style for contact-form */
 .contact-form {
   display: flex;
