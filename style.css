@@ -85,7 +85,6 @@ nav a {
   transition: color 0.3s ease; /* Smooth transition */
 }
 
-
 .home-content {
   /* background-image: url(img/Background7-Image.jpg); */
   background-image: linear-gradient(
@@ -103,7 +102,7 @@ nav a {
 .home-text {
   width: 85vw;
   margin: 0 auto;
-  margin-top: 10rem;
+  margin-top: 18rem;
   color: #fff;
   /* color: #159881; */
   /* margin-left: 50%; */
@@ -478,7 +477,7 @@ nav a {
     height: auto; /* Adjust height of circles for smaller screens */
     margin-bottom: 2rem;
   }
-  
+
   .circle-2,
   .circle-3 {
     margin-top: 1rem;
@@ -575,77 +574,76 @@ nav a {
 
 /* End */
 
-
-  /*---------------------------------------
+/*---------------------------------------
       PRICING             
   -----------------------------------------*/
-#pricing{
+#pricing {
   width: 95vw;
   margin: 0 auto;
 }
-  #about .section-title,
-  #pricing .section-title {
-    text-align: center;
- width: 95vw;
+#about .section-title,
+#pricing .section-title {
+  text-align: center;
+  width: 95vw;
   margin: 0 auto;
-  }
+}
 
-  #pricing .col-md-4 {
-    margin: 0;
-    padding: 0;
-  }
+#pricing .col-md-4 {
+  margin: 0;
+  padding: 0;
+}
 
-  #pricing .col-md-4:last-child .pricing-thumb {
-    border-right: 0;
-  }
+#pricing .col-md-4:last-child .pricing-thumb {
+  border-right: 0;
+}
 
-  .pricing-thumb {
-    background: #ffffff;
-    border-right: 2px solid #f0f0f0;
-    padding: 20px 40px;
-  }
+.pricing-thumb {
+  background: #ffffff;
+  border-right: 2px solid #f0f0f0;
+  padding: 20px 40px;
+}
 
-  .pricing-title {
-    padding-bottom: 5px;
-  }
+.pricing-title {
+  padding-bottom: 5px;
+}
 
-  .pricing-info {
-    border-top: 2px solid #f0f0f0;
-    border-bottom: 2px solid #f0f0f0;
-  }
+.pricing-info {
+  border-top: 2px solid #f0f0f0;
+  border-bottom: 2px solid #f0f0f0;
+}
 
-  .pricing-info,
-  .pricing-bottom {
-    padding: 20px 0;
-  }
+.pricing-info,
+.pricing-bottom {
+  padding: 20px 0;
+}
 
-  .pricing-info p {
-    font-size: 16px;
-  }
+.pricing-info p {
+  font-size: 16px;
+}
 
-  .pricing-bottom {
-    position: relative;
-  }
+.pricing-bottom {
+  position: relative;
+}
 
-  .pricing-bottom span {
-    font-size: 20px;
-  }
+.pricing-bottom span {
+  font-size: 20px;
+}
 
-  .pricing-btn {
-    position: absolute;
-    top: 15px;
-    right: 0;
-    display: inline-block;
-   background-color: #159881;
-   padding: 10px;
-   color: white;
-   border-radius: 30px;
-  }
-  .section-btn, .pricing-btn a {
-    text-decoration: none;
-  }
+.pricing-btn {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  display: inline-block;
+  background-color: #159881;
+  padding: 10px;
+  color: white;
+  border-radius: 30px;
+}
+.section-btn,
+.pricing-btn a {
+  text-decoration: none;
+}
 /* End */
-
 
 /* Our-Team Section */
 .our-team {
@@ -1004,6 +1002,71 @@ form {
   background-size: cover;
   background-position: center;
 }
+
+/* FAQs */
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+details {
+  margin: 20px;
+  border-radius: 5px;
+  /* border: 1px solid #050000; */
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  /* background-color: #1a1a1a; */
+  border-bottom: 1px solid #ccc;
+  border-radius: 10px;
+  width: 60vw;
+  margin: 0 auto;
+  color: black;
+}
+
+summary::marker {
+  content: "";
+}
+.content {
+  padding: 10px;
+  width: 60vw;
+  margin: 0 auto;
+}
+.content p {
+  padding: 10px;
+  width: 70vw;
+  /* margin-left: -2rem; */
+  margin: 0 auto;
+  text-align: start;
+}
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  details {
+    margin: 10px;
+  }
+  h2 {
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  summary {
+  width: 90vw;
+  margin: 0 auto;
+  color: black;
+}
+.content p {
+  padding: 10px;
+  width: 95vw;
+  margin-left: -4.5rem;
+  /* margin: 0 auto; */
+  text-align: start;
+}
+
+}
+/* END */
 
 .company,
 .contact,
