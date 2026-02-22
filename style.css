@@ -1139,24 +1139,24 @@ nav a {
 h2 {
   text-align: center;
   margin-top: 20px;
+  color: var(--text-main);
 }
 
 details {
   margin: 20px;
   border-radius: 5px;
-  /* border: 1px solid #050000; */
 }
 
 summary {
   font-weight: bold;
   cursor: pointer;
   padding: 10px;
-  /* background-color: #1a1a1a; */
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--card-border);
   border-radius: 10px;
   width: 60vw;
   margin: 0 auto;
-  color: black;
+  color: var(--text-main);
+  transition: color 0.3s ease;
 }
 
 summary::marker {
@@ -1167,6 +1167,7 @@ summary::marker {
   padding: 10px;
   width: 60vw;
   margin: 0 auto;
+  color: var(--text-main);
 }
 
 .content-text p {
@@ -1174,6 +1175,7 @@ summary::marker {
   width: 60vw;
   margin: 0 auto;
   text-align: start;
+  color: var(--text-muted);
 }
 
 /* Media Query for Responsiveness */
@@ -1191,7 +1193,7 @@ summary::marker {
   summary {
     width: 90vw;
     margin: 0 auto;
-    color: black;
+    color: var(--text-main);
   }
 
   .content-text p {
