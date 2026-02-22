@@ -1042,7 +1042,7 @@ nav a {
 /* ── Mobile Navbar & CTA Polish ── */
 @media (max-width: 991px) {
 
-  /* Let Bootstrap's flex-wrap work so collapse goes below the top bar */
+  /* Let Bootstrap flex-wrap work so collapse wraps below */
   .navbar>.container {
     flex-wrap: wrap;
     align-items: center;
@@ -1050,8 +1050,14 @@ nav a {
     gap: 0;
   }
 
-  /* Push the toggler to the right — everything after it follows */
+  /* Brand stays far left */
+  .navbar-brand {
+    order: 1;
+  }
+
+  /* Toggler pushed right */
   .navbar-toggler {
+    order: 2;
     margin-left: auto;
     padding: 0.3rem 0.6rem;
     border-radius: 8px;
@@ -1063,15 +1069,17 @@ nav a {
     box-shadow: none;
   }
 
-  /* Theme switch sits right next to the toggler, no auto margin */
+  /* Theme switch sits RIGHT NEXT to the toggler in the same top row */
   .theme-switch-wrapper {
+    order: 3;
     margin-left: 0.6rem;
     transform: scale(0.8);
     transform-origin: right center;
   }
 
-  /* Collapse fills the whole row below the top bar */
+  /* Collapse always wraps to its own row BELOW the top bar */
   .navbar-collapse {
+    order: 10;
     flex-basis: 100%;
     width: 100%;
     margin-top: 0.5rem;
@@ -1079,7 +1087,7 @@ nav a {
     border-top: 1px solid rgba(255, 255, 255, 0.15);
   }
 
-  /* Nav links: full-width, left-aligned, pill hover */
+  /* Nav links: full-width, left-aligned with pill hover */
   .navbar-nav {
     margin-left: 0 !important;
     width: 100%;
