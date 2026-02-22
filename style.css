@@ -508,7 +508,7 @@ nav a {
 /* our process */
 .our-process {
   background-color: var(--secondary-bg);
-  padding: 5rem 1.5rem;
+  padding: 6rem 1.5rem;
   transition: background-color 0.3s ease;
 }
 
@@ -608,7 +608,8 @@ nav a {
 /* Testimonials Section */
 .Testimonials-heading {
   text-align: center;
-  padding: 5rem 1.5rem 2rem;
+  padding: 6rem 1.5rem 2rem;
+  background-color: var(--primary-bg);
 }
 
 .Testimonials-heading h1 {
@@ -714,8 +715,8 @@ nav a {
   -----------------------------------------*/
 /* Pricing Section */
 #pricing {
-  padding: 5rem 1.5rem;
-  background-color: var(--primary-bg);
+  padding: 6rem 1.5rem;
+  background-color: var(--secondary-bg);
   transition: background-color 0.3s ease;
 }
 
@@ -808,8 +809,8 @@ nav a {
 
 /* Our-Team Section */
 .our-team {
-  background-color: #f4f4f4;
-  padding: 5rem 1.5rem;
+  background-color: var(--primary-bg);
+  padding: 6rem 1.5rem;
   margin-top: 0;
 }
 
@@ -897,12 +898,14 @@ nav a {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1.5rem;
   color: #f2f2f2;
 }
 
 .background-color {
   background-color: var(--accent-teal);
-  padding: 5rem 1.5rem;
+  padding: 5rem 0;
+  width: 100%;
   transition: background-color 0.3s ease;
 }
 
