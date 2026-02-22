@@ -1,0 +1,1099 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Pacifico&family=Permanent+Marker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+span {
+  color: #032742;
+  font-weight: bold;
+}
+
+.jtech {
+  color: #159881;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  margin: 0;
+}
+
+/* header {
+  background-color: #159881; 
+  color: #fff; 
+  padding: 1.5rem; 
+  margin-top: 1rem;
+}
+/* nav {
+  display: flex;
+  justify-content: center; 
+}  */
+/* Styling the navigation menu */
+/* nav ul {
+  list-style: none;
+  display: flex;
+
+}
+
+nav ul li {
+  margin-right: 15px; 
+  
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  
+} */
+
+/* Changing the link color on hover */
+/* nav a:hover {
+  color: black; 
+  transition: all .4s ease;
+} */
+.navbar {
+  background-color: #159881;
+}
+
+/* Add this CSS to your style.css file */
+/* Add this CSS to your style.css file */
+.navbar-nav .nav-item .nav-link:hover {
+  color: black !important;
+  /* Change color on hover */
+}
+
+/* Optionally, you can add transition effects for smooth hover */
+.navbar-nav .nav-item .nav-link {
+  transition: color 0.3s ease;
+  /* Smooth transition */
+}
+
+.home-content {
+  background-image: linear-gradient(to right,
+      rgba(0, 0, 0, 0.7) 70%,
+      rgba(0, 0, 0, 0.2)),
+    url(img/background12-image.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem 1.5rem;
+}
+
+.home-text {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+/* Keyframes for text animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+    /* Increase the initial translateY value for a stronger effect */
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to home-text class's h1 element */
+.home-text h1 {
+  animation: fadeInUp 1.5s ease forwards;
+  font-size: clamp(1.5rem, 5vw, 3.5rem);
+  line-height: 1.2;
+}
+
+.cta button {
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cta button:hover {
+  transition: all 0.4s ease-out;
+  background: #159881;
+}
+
+@media screen and (max-width: 768px) {
+  .home-content {
+    background-image: url(img/background12-image.jpg);
+    /* background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7) 10%,
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(img/background7-image.jpg); */
+    background-position: center;
+    background-size: cover;
+    min-height: 70vh;
+    padding-top: 50px;
+  }
+
+  .home-text {
+    width: 80vw;
+    /* Adjust width for smaller screens */
+    margin: 0 auto;
+    margin-top: 11rem;
+    /* Adjust margin-top specifically for iPhone SE */
+  }
+
+  .home-text h1 {
+    font-weight: bolder;
+    font-size: 25px;
+  }
+
+  .cta button {
+    margin-top: 8px;
+    /* Adjust margin as needed */
+  }
+}
+
+@media screen and (max-width: 926px) and (max-height: 428px) {
+  .home-text {
+    margin-top: -1rem;
+    /* Adjust margin-top specifically for iPhone 12 Pro */
+  }
+}
+
+@media screen and (max-width: 740px) and (max-height: 360px) {
+  .home-text {
+    margin-top: -1rem;
+    /* Adjust margin-top specifically for Samsung Galaxy S8+ */
+  }
+}
+
+/* -------------------------------------- ABOUT US----------------------------------------------------------------------------------- */
+
+/* .container {
+  display: flex; 
+  justify-content: space-between;
+  width: 100% !important;
+  max-width: none !important;
+  margin: auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+
+.content {
+  flex: 1; 
+  text-align: center;
+  padding: 20px;
+  align-items: center;
+}
+
+.content h1 {
+  color: #333;
+  font-size: 30px;
+}
+
+.content p {
+  color: #666;
+}
+
+.content-image {
+  flex: 1; 
+  margin-top: 20px;
+}
+
+.content-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.btn button {
+  padding: 0.7rem;
+  margin-top: 1rem !important;
+  border-radius: 30px;
+  border: 2px solid black;
+  background-color: #159881;
+  color: #fff;
+  border: none;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; 
+    padding: 10px;
+    margin-top: -1rem;
+  }
+  .content p {
+    color: #666;
+    
+  }
+  .content h1 {
+    margin-top: 2rem;
+  }
+  .content,
+  .content-image {
+    flex: 1; 
+  }
+  .btn button {
+    padding: 1rem;
+    margin-top: 1rem !important;
+    border-radius: 30px;
+    border: 2px solid black;
+    background-color: #159881;
+    color: #fff;
+  }
+} */
+/* ------------------------------------------------END---------------------------------------------------------------------------------- */
+
+.container-1 {
+  padding: 4rem 1.5rem 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container-1 h3 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.container-1 p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 4rem 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-2 div {
+  flex: 1;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.container-2 img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.container-2 h3 {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.container-2 p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.container-services {
+  background-color: black;
+  padding: 5rem 1.5rem;
+  margin-top: 2rem;
+}
+
+.container-services-inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-services .heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.container-services .heading h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.box-1 {
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  color: black;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.box-1:hover {
+  transform: translateY(-10px);
+}
+
+.box-1 img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 1.5rem;
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.box-1 h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.box-1 p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* our process */
+.our-process {
+  background-color: #f4f4f4;
+  padding: 5rem 1.5rem;
+}
+
+.our-process h3 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #333;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.our-process-text {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.our-process-text h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.our-process-text p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.process {
+  color: #159881;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.circle-1,
+.circle-2,
+.circle-3 {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.circle-1:hover,
+.circle-2:hover,
+.circle-3:hover {
+  border-color: #159881;
+  transform: translateY(-5px);
+}
+
+.circle h5 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  background-color: #159881;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.circle h6 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.circle p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* end */
+/* Testimonials Section */
+.Testimonials-heading {
+  text-align: center;
+  padding: 5rem 1.5rem 2rem;
+}
+
+.Testimonials-heading h1 {
+  font-size: 2rem;
+  color: #159881;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.Testimonials-heading p {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.Testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  padding: 2rem 1.5rem 5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feedback {
+  background-color: #159881;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback:hover {
+  transform: translateY(-10px);
+}
+
+.feedback h2 {
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  margin: 0;
+}
+
+.feedback h5 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.feedback p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+  color: white;
+  line-height: 1.6;
+}
+
+.title-name {
+  margin-top: auto;
+  color: #fff;
+}
+
+.title-name h6 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.feedback img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid white;
+  position: absolute;
+  bottom: -35px;
+  left: 2rem;
+  background: white;
+  object-fit: cover;
+}
+
+/* .bg-color {
+  background-color: black;
+  margin-top: 2rem;
+  position: relative;
+  padding:3rem ;
+  width: 50%;
+} */
+
+/* End */
+
+/*---------------------------------------
+      PRICING             
+  -----------------------------------------*/
+/* Pricing Section */
+#pricing {
+  padding: 5rem 1.5rem;
+  background-color: #fff;
+}
+
+#pricing .section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#pricing .section-title h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.pricing-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing-thumb {
+  background: #ffffff;
+  border: 2px solid #f0f0f0;
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  transition: border-color 0.3s ease;
+  text-align: center;
+}
+
+.pricing-thumb:hover {
+  border-color: #159881;
+}
+
+.pricing-title h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #159881;
+}
+
+.pricing-info {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.pricing-info p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.pricing-info p:last-child {
+  margin-bottom: 0;
+}
+
+.pricing-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.pricing-bottom span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.section-btn.pricing-btn {
+  display: inline-block;
+  background-color: #159881;
+  padding: 0.8rem 2rem;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.section-btn.pricing-btn:hover {
+  background-color: #032742;
+}
+
+/* End */
+
+/* Our-Team Section */
+.our-team {
+  background-color: #f4f4f4;
+  padding: 5rem 1.5rem;
+  margin-top: 0;
+}
+
+.team-heading {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.team-heading h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.team-heading p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.team-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-image {
+  text-align: center;
+  background-color: white;
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.team-image:hover {
+  transform: translateY(-10px);
+}
+
+.team-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 4px solid #f4f4f4;
+}
+
+.team-image h4 {
+  font-size: 1.4rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.team-image h6 {
+  font-size: 1rem;
+  color: #159881;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.team-image p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* End */
+
+/* Style for contact-form */
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #f2f2f2;
+}
+
+.background-color {
+  background-color: #159881;
+  padding: 5rem 1.5rem;
+}
+
+.get-intouch {
+  flex: 1;
+  min-width: 300px;
+}
+
+.get-intouch h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.get-intouch p {
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info-item img {
+  width: 24px;
+  height: 24px;
+  margin-right: 1.5rem;
+}
+
+.contact-info-item p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.contact-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.contact-content form {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 2.5rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.contact-content label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.contact-content input,
+.contact-content textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: white;
+  color: #333;
+  font-family: inherit;
+}
+
+.contact-content button {
+  background-color: #333;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.contact-content button:hover {
+  background-color: white;
+  color: #159881;
+}
+
+/* Footer */
+
+.footer-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: #fff;
+  padding: 4rem 1.5rem;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-bg .about p {
+  margin: 0;
+  /* Remove default margin for the paragraph */
+}
+
+.footer-bg .cta-abt button {
+  background-color: transparent;
+  color: white;
+  padding: 12px 30px;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.footer-bg .cta-abt button:hover {
+  background-color: white;
+  color: #333;
+}
+
+.footer-bg-one {
+  background-color: black;
+}
+
+/* style.css */
+
+/* Style for the footer-content class */
+.ftr {
+  background-color: #282828;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+  /* background-image: url(img/footer-img.jpg); */
+  background: linear-gradient(rgba(40, 40, 40, 0.8), rgba(40, 40, 40, 0.5)),
+    url(img/footer-img.jpg);
+  background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+/* FAQs */
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+details {
+  margin: 20px;
+  border-radius: 5px;
+  /* border: 1px solid #050000; */
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  /* background-color: #1a1a1a; */
+  border-bottom: 1px solid #ccc;
+  border-radius: 10px;
+  width: 60vw;
+  margin: 0 auto;
+  color: black;
+}
+
+summary::marker {
+  content: "";
+}
+
+.content {
+  padding: 10px;
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.content-text p {
+  padding: 10px;
+  width: 60vw;
+  margin: 0 auto;
+  text-align: start;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  details {
+    margin: 10px;
+  }
+
+  h2 {
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+
+  summary {
+    width: 90vw;
+    margin: 0 auto;
+    color: black;
+  }
+
+  .content-text p {
+    padding: 10px;
+    width: 90vw;
+    /* margin-left: -4.5rem; */
+    /* margin: 0 auto; */
+    /* text-align: start; */
+  }
+}
+
+/* END */
+
+.company,
+.contact,
+.address {
+  margin-bottom: 20px;
+  /* Add margin between the sections */
+  text-align: center;
+  margin-top: 3rem;
+  color: #fff;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.company h1,
+.contact h1,
+.address h1 {
+  color: #fff;
+}
+
+.company ul {
+  list-style: none;
+  /* Remove the default list styling */
+  padding: 0;
+  /* Remove default padding */
+}
+
+.company li a {
+  text-decoration: none;
+  /* Remove underline from links */
+  color: white;
+  /* Set the color for the links */
+  display: block;
+  /* Make the links block-level for better spacing */
+  margin-bottom: 5px;
+  /* Add margin between the links */
+}
+
+.company li a:hover {
+  transition: all 0.4s ease;
+  color: #159881;
+}
+
+/* Additional styling for the contact information */
+.contact p {
+  margin: 5px 0;
+  /* Add margin to the contact paragraphs */
+}
+
+@media screen and (max-width: 768px) {
+  .ftr {
+    flex-direction: column;
+    background-color: #282828;
+    /* padding: 20px; */
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    color: #fff;
+  }
+
+  .line {
+    display: none;
+  }
+}
+
+footer {
+  background-color: white;
+  color: black;
+  text-align: center;
+  /* padding: 10px 10px; */
+  /* position: fixed; */
+  /* bottom: 0; */
+  /* width: 100%; */
+  /* align-items: center; */
+}
+
+.footer-content p {
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+}
