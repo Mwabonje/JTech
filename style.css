@@ -13,6 +13,8 @@
   --footer-bg: #032742;
   --card-bg: #ffffff;
   --card-border: #f0f0f0;
+  --nav-bg-glass: rgba(21, 152, 129, 0.85);
+  --nav-bg-solid: #159881;
 }
 
 [data-theme="dark"] {
@@ -22,7 +24,8 @@
   --text-muted: #b0b0b0;
   --accent-teal: #1db99d;
   --accent-blue: #0a4d7d;
-  --nav-bg: #0f6c5b;
+  --nav-bg-glass: rgba(15, 108, 91, 0.8);
+  --nav-bg-solid: #0f6c5b;
   --footer-bg: #000000;
   --card-bg: #222222;
   --card-border: #333333;
@@ -115,18 +118,52 @@ nav a {
   transition: all .4s ease;
 } */
 .navbar {
-  background-color: var(--nav-bg);
-  transition: background-color 0.3s ease;
+  background-color: var(--nav-bg-glass);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
+  padding: 1rem 0;
+  z-index: 1030;
 }
 
-/* Add this CSS to your style.css file */
-/* Add this CSS to your style.css file */
-.navbar-nav .nav-item .nav-link:hover {
-  color: var(--black) !important;
+.navbar.scrolled {
+  background-color: var(--nav-bg-solid);
+  padding: 0.6rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
 }
 
 .navbar-nav .nav-item .nav-link {
+  font-weight: 500;
+  margin: 0 0.5rem;
+  position: relative;
   transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--white);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+  width: 80%;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: var(--white) !important;
+  opacity: 0.9;
 }
 
 .home-content {
@@ -884,7 +921,7 @@ nav a {
 .contact-text h1 {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 2rem;
+  margin-left: 0.5rem;
 }
 
 .contact-content form {

@@ -1,9 +1,9 @@
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   // Smooth scrolling for anchor links
   const anchorLinks = document.querySelectorAll('a[href^="#"]');
   anchorLinks.forEach(anchor => {
-    anchor.addEventListener("click", function(e) {
+    anchor.addEventListener("click", function (e) {
       e.preventDefault();
       const targetId = this.getAttribute("href").substring(1);
       const targetElement = document.getElementById(targetId);
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
   themeToggle.addEventListener('click', () => {
     const currentTheme = htmlElement.getAttribute('data-theme');
     const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-    
+
     htmlElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
     updateIcon(newTheme);
@@ -41,4 +41,14 @@ document.addEventListener("DOMContentLoaded", function() {
       themeIcon.classList.add('fa-moon');
     }
   }
+
+  // Navbar Scroll Effect
+  const navbar = document.querySelector('.navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
 });
