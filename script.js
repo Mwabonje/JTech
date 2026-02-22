@@ -10,6 +10,15 @@ document.addEventListener("DOMContentLoaded", function () {
       if (targetElement) {
         targetElement.scrollIntoView({ behavior: "smooth" });
       }
+
+      // Close the mobile navbar collapse when a link is clicked
+      const navbarCollapse = document.getElementById('navbarSupportedContent');
+      if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+        const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+        if (bsCollapse) {
+          bsCollapse.hide();
+        }
+      }
     });
   });
 
