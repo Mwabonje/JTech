@@ -39,6 +39,8 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  /* offset for sticky navbar */
 }
 
 html,
