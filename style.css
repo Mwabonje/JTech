@@ -1042,43 +1042,58 @@ nav a {
 /* ── Mobile Navbar & CTA Polish ── */
 @media (max-width: 991px) {
 
-  /* Scale down the Bootstrap toggler button */
+  /* Let Bootstrap's flex-wrap work so collapse goes below the top bar */
+  .navbar>.container {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0;
+  }
+
+  /* Push the toggler to the right — everything after it follows */
   .navbar-toggler {
-    padding: 0.25rem 0.5rem;
-    font-size: 0.85rem;
-    border-radius: 6px;
+    margin-left: auto;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
     border: 1.5px solid rgba(255, 255, 255, 0.5) !important;
-    background-color: rgba(255, 255, 255, 0.15) !important;
+    background-color: rgba(255, 255, 255, 0.12) !important;
   }
 
   .navbar-toggler:focus {
     box-shadow: none;
   }
 
-  /* Keep the theme switch compact and vertically centred */
+  /* Theme switch sits right next to the toggler, no auto margin */
   .theme-switch-wrapper {
-    margin-left: auto;
-    transform: scale(0.85);
+    margin-left: 0.6rem;
+    transform: scale(0.8);
     transform-origin: right center;
   }
 
-  /* Give the nav container a tidy flex row */
-  .navbar>.container {
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  /* Collapse menu: add gentle separator and padding */
+  /* Collapse fills the whole row below the top bar */
   .navbar-collapse {
+    flex-basis: 100%;
+    width: 100%;
     margin-top: 0.5rem;
-    padding: 1rem 0;
+    padding: 0.75rem 0;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
   }
 
+  /* Nav links: full-width, left-aligned, pill hover */
+  .navbar-nav {
+    margin-left: 0 !important;
+    width: 100%;
+  }
+
   .navbar-nav .nav-item .nav-link {
-    padding: 0.5rem 0;
+    padding: 0.55rem 1rem !important;
     font-size: 0.95rem;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+  }
+
+  .navbar-nav .nav-item .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.12);
   }
 
   /* More About Us button: slim, pill-shaped on mobile */
