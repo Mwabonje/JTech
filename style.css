@@ -442,10 +442,9 @@ nav a {
   line-height: 1.7;
 }
 
-.container-services {
-  background-color: var(--secondary-bg);
-  padding: 5rem 1.5rem;
-  margin-top: 2rem;
+.services-section {
+  background-color: var(--primary-bg);
+  padding: 6rem 1.5rem;
   transition: background-color 0.3s ease;
 }
 
@@ -458,16 +457,16 @@ nav a {
   margin: 0 auto;
 }
 
-.container-services .heading {
+.services-section .heading {
   text-align: center;
-  margin-bottom: 3rem;
-  color: var(--home-text-color);
+  margin-bottom: 4rem;
+  color: var(--text-main);
 }
 
-.container-services .heading h3 {
-  font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 2px;
+.services-section .heading h3 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 
 .box-1 {
