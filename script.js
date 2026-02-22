@@ -8,7 +8,12 @@ document.addEventListener("DOMContentLoaded", function () {
       const targetId = this.getAttribute("href").substring(1);
       const targetElement = document.getElementById(targetId);
       if (targetElement) {
-        targetElement.scrollIntoView({ behavior: "smooth" });
+        const navbarHeight = document.querySelector('.navbar')?.offsetHeight || 80;
+        const elementTop = targetElement.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+          top: elementTop - navbarHeight,
+          behavior: "smooth"
+        });
       }
 
       // Close the mobile navbar collapse when a link is clicked
